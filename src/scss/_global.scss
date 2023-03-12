@@ -1,0 +1,56 @@
+html {
+  @media (prefers-reduced-motion: no-preference) {
+    .smooth-scroll {
+      scroll-behavior: smooth;
+    }
+  }
+}
+
+body {
+  background-color: var(--clr-bg);
+  color: var(--clr-white);
+  font-family: "SFProText", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: rem(16);
+  line-height: lh(20, 15);
+
+  &.no-scroll {
+    overflow: hidden;
+  }
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+img,
+svg {
+  vertical-align: middle;
+}
+
+a {
+  text-decoration: none;
+}
+
+.page {
+  display: flex;
+  margin-left: 320px;
+  padding-top: 30px;
+  padding-bottom: 60px;
+
+  @media (max-width: 991px) {
+    margin-left: 0;
+  }
+}
+
+.container {
+  max-width: 1150px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 30px;
+  padding-right: 30px;
+}

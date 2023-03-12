@@ -1,0 +1,166 @@
+.sidebar {
+  background-color: #1e1e1e;
+  width: 320px;
+  position: fixed;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  z-index: 100;
+  height: 100%;
+
+  @media (max-width: 991px) {
+    display: none;
+  }
+}
+
+.sidebar__wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  // align-items: flex-start;
+  padding: 40px 28px 30px;
+}
+
+.sidebar__logo {
+  margin-bottom: 28px;
+}
+
+.sidebar-nav {
+  display: flex;
+  flex-direction: column;
+  row-gap: 4px;
+  width: 100%;
+  margin: 20px 0 32px;
+  padding-bottom: 20px;
+
+  border-bottom: 1px solid #1e1e1e;
+}
+
+.sidebar-nav__link {
+  display: flex;
+  align-items: center;
+  column-gap: em(16, 15);
+  padding: em(12, 15);
+
+  color: var(--clr-white);
+  border-radius: 6px;
+  font-size: rem(15);
+  font-weight: 500;
+
+  @media (any-hover: hover) {
+    &:hover {
+      background-color: var(--clr-opacity);
+    }
+  }
+}
+
+.sidebar-nav__icon {
+  width: 24px;
+  height: 20px;
+}
+
+.sidebar__btn {
+  &::first-letter {
+    margin-right: 5px;
+  }
+}
+
+.sidebar-list {
+  width: 100%;
+}
+
+.sidebar-list__title {
+  font-size: rem(13);
+
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: #9a9a9a;
+}
+
+.sidebar-list__wrapper {
+  margin: 20px 0;
+
+  li {
+    &:not(:last-child) {
+      margin-bottom: 4px;
+    }
+  }
+}
+
+.sidebar-list__link {
+  display: flex;
+  align-items: center;
+  column-gap: 16px;
+  padding: em(10, 15) em(12, 15);
+
+  font-size: rem(15);
+  color: var(--clr-white);
+  font-weight: 500;
+  border-radius: 6px;
+
+  @media (any-hover: hover) {
+    &:hover {
+      background-color: var(--clr-opacity);
+    }
+  }
+}
+
+.sidebar-list__icon {
+  width: 24px;
+  height: 24px;
+  flex-shrink: 0;
+  overflow: hidden;
+  border-radius: 4px;
+}
+
+.sidebar-profile {
+  margin-top: auto;
+  display: flex;
+  align-items: center;
+  column-gap: 10px;
+  position: relative;
+}
+
+.sidebar-profile__left {
+  flex-shrink: 0;
+}
+
+.sidebar-profile__photo {
+  width: 32px;
+  height: 32px;
+  padding: 3px;
+  border-radius: 50%;
+  overflow: hidden;
+
+  background-color: var(--clr-white);
+}
+
+.sidebar-profile__name {
+  font-size: rem(15);
+  font-weight: 700;
+  color: var(--clr-white);
+}
+
+.sidebar-profile__nickname {
+  font-size: rem(13);
+  color: #8e8e8e;
+  text-transform: lowercase;
+}
+
+.sidebar-profile__right {
+  display: flex;
+  flex-direction: column;
+}
+
+.sidebar-profile__btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 20px;
+
+  svg {
+    width: 20px;
+    height: 20px;
+    color: var(--clr-white);
+  }
+}

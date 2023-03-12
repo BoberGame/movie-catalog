@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="css/style.min.css">
+
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="files/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="files/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="files/favicon/favicon-16x16.png">
+    <link rel="manifest" href="files/favicon/site.webmanifest">
+    <link rel="mask-icon" href="files/favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+
+    <title>Home</title>
+</head>
+
+<body>
+  <header class="header">
+  <div class="container">
+    <div class="header__wrapper">
+      <button class="header__btn btn-clear">
+        <span>Open menu</span>
+      </button>
+      <div class="header__logo">
+        <img src="img/logo.svg" alt="Logo">
+      </div>
+    </div>
+  </div>
+</header>
+  <aside class="sidebar">
+  <div class="sidebar__wrapper">
+    <div class="sidebar__logo">
+      <img class="img" src="img/logo.svg" alt="Logo">
+    </div>
+    <input class="form-control" type="text" id="globalSearch" placeholder="Search">
+    <nav class="sidebar-nav">
+      <a class="sidebar-nav__link" href="#">
+        <svg class="sidebar-nav__icon">
+          <use href="img/icons/icons.svg#home" />
+        </svg>
+        Home
+      </a>
+      <a class="sidebar-nav__link" href="#">
+        <svg class="sidebar-nav__icon">
+          <use href="img/icons/icons.svg#history" />
+        </svg>
+        History
+      </a>
+    </nav>
+    <div class="sidebar-list">
+      <h2 class="sidebar-list__title">My Lists</h2>
+      <ul class="sidebar-list__wrapper">
+        <li>
+          <a class="sidebar-list__link" href="#">
+            <img class="sidebar-list__icon" src="img/watchlist-icon.png" alt="watchlist icon">
+            Movies by Tom Cruise
+          </a>
+        </li>
+        <li>
+          <a class="sidebar-list__link" href="#">
+            <img class="sidebar-list__icon" src="img/watchlist-icon.png" alt="watchlist icon">
+            Detectives
+          </a>
+        </li>
+      </ul>
+      <a class="sidebar__btn btn" href="#">+ Create watchlist</a>
+    </div>
+    <div class="sidebar-profile">
+      <div class="sidebar-profile__left">
+        <img class="sidebar-profile__photo img" src="img/user-icon.svg" alt="User photo">
+      </div>
+      <div class="sidebar-profile__right">
+        <a class="sidebar-profile__name" href="#">Guest</a>
+        <a class="sidebar-profile__nickname" href="#">@Guest</a>
+      </div>
+      <button class="sidebar-profile__btn btn-clear" type="button">
+        <svg>
+          <use href="img/icons/icons.svg#options" />
+        </svg>
+      </button>
+    </div>
+  </div><!-- /.sidebar__wrapper -->
+</aside><!-- ./sidebar -->
+
+  <main class="page">
+    <div class="container">
+      <form class="form-wrapper" action="/">
+        <input class="form-control" type="text" placeholder="Search  for movies by title">
+        <button class="form-btn btn" type="submit">Search</button>
+      </form>
+      <section class="section" aria-label="Popular movies">
+        <h2 class="section__title">Popular movies right now</h2>
+        <div class="cards">
+          <div class="card">
+  <a href="#">
+    <div class="card__preview">
+      <img class="card__img" src="img/poster-1.jpg" alt="Movie poster">
+      <button class="card__favourites-btn btn-clear" type="button">
+        <!-- <svg>
+            <use href="img/icons/icons.svg#add"/>
+        </svg> -->
+        <img src="img/add-icon.svg" alt="Add to favourites icon">
+      </button>
+    </div>
+    <div class="card__info">
+      <a class="card__title" href="#">Top Gun: Maverick (2022)</a>
+      <a class="card__category" href="#">Action</a>
+    </div>
+  </a>
+</div>
+          <div class="card">
+  <a href="#">
+    <div class="card__preview">
+      <img class="card__img" src="img/poster-1.jpg" alt="Movie poster">
+      <button class="card__favourites-btn btn-clear" type="button">
+        <!-- <svg>
+            <use href="img/icons/icons.svg#add"/>
+        </svg> -->
+        <img src="img/add-icon.svg" alt="Add to favourites icon">
+      </button>
+    </div>
+    <div class="card__info">
+      <a class="card__title" href="#">Top Gun: Maverick (2022)</a>
+      <a class="card__category" href="#">Action</a>
+    </div>
+  </a>
+</div>
+          <div class="card">
+  <a href="#">
+    <div class="card__preview">
+      <img class="card__img" src="img/poster-1.jpg" alt="Movie poster">
+      <button class="card__favourites-btn btn-clear" type="button">
+        <!-- <svg>
+            <use href="img/icons/icons.svg#add"/>
+        </svg> -->
+        <img src="img/add-icon.svg" alt="Add to favourites icon">
+      </button>
+    </div>
+    <div class="card__info">
+      <a class="card__title" href="#">Top Gun: Maverick (2022)</a>
+      <a class="card__category" href="#">Action</a>
+    </div>
+  </a>
+</div>
+          <div class="card">
+  <a href="#">
+    <div class="card__preview">
+      <img class="card__img" src="img/poster-1.jpg" alt="Movie poster">
+      <button class="card__favourites-btn btn-clear" type="button">
+        <!-- <svg>
+            <use href="img/icons/icons.svg#add"/>
+        </svg> -->
+        <img src="img/add-icon.svg" alt="Add to favourites icon">
+      </button>
+    </div>
+    <div class="card__info">
+      <a class="card__title" href="#">Top Gun: Maverick (2022)</a>
+      <a class="card__category" href="#">Action</a>
+    </div>
+  </a>
+</div>
+          <div class="card">
+  <a href="#">
+    <div class="card__preview">
+      <img class="card__img" src="img/poster-1.jpg" alt="Movie poster">
+      <button class="card__favourites-btn btn-clear" type="button">
+        <!-- <svg>
+            <use href="img/icons/icons.svg#add"/>
+        </svg> -->
+        <img src="img/add-icon.svg" alt="Add to favourites icon">
+      </button>
+    </div>
+    <div class="card__info">
+      <a class="card__title" href="#">Top Gun: Maverick (2022)</a>
+      <a class="card__category" href="#">Action</a>
+    </div>
+  </a>
+</div>
+          <div class="card">
+  <a href="#">
+    <div class="card__preview">
+      <img class="card__img" src="img/poster-1.jpg" alt="Movie poster">
+      <button class="card__favourites-btn btn-clear" type="button">
+        <!-- <svg>
+            <use href="img/icons/icons.svg#add"/>
+        </svg> -->
+        <img src="img/add-icon.svg" alt="Add to favourites icon">
+      </button>
+    </div>
+    <div class="card__info">
+      <a class="card__title" href="#">Top Gun: Maverick (2022)</a>
+      <a class="card__category" href="#">Action</a>
+    </div>
+  </a>
+</div>
+         
+        </div>
+      </section>
+    </div>
+  </main>
+
+
+  <script src="js/app.min.js"></script>
+
+
+</body>
+
+</html>

@@ -1,0 +1,46 @@
+.form-wrapper {
+  display: flex;
+  
+}
+
+.form-control {
+  display: block;
+  width: 100%;
+  padding: em(12, 15) em(32, 15) em(12, 15) em(50, 15);
+
+  font-size: rem(15);
+  font-family: inherit;
+  color: var(--clr-white);
+  border: 1px solid #1f1f1f;
+  border-radius: 8px;
+
+  background-color: var(--clr-black);
+  background-image: url("../img/search.svg");
+  background-size: 18px 18px;
+  background-repeat: no-repeat;
+  background-position: 18px 50%;
+  transition: border-color 0.2s;
+
+  &::placeholder {
+    color: #5c5c5c;
+  }
+
+  &:focus {
+    border-color: var(--clr-primary);
+    outline: none;
+  }
+}
+
+.form-btn {
+  margin-left: -30px;
+  // max-width: 100px;
+  // min-width: 0;
+
+  @media (max-width: 768px) {
+    min-width: 150px;
+  }
+
+  @media (max-width: 576px) {
+    min-width: 100px;
+  }
+}

@@ -1,0 +1,50 @@
+{
+  "name": "gulp-ts",
+  "version": "1.0.0",
+  "description": "",
+  "main": "gulpfile.js",
+  "type": "module",
+  "scripts": {
+    "dev": "gulp",
+    "build": "gulp build --build",
+    "zip": "gulp deployZip --build"
+  },
+  "author": "BoberGame",
+  "license": "ISC",
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^5.54.1",
+    "@typescript-eslint/parser": "^5.54.1",
+    "browser-sync": "latest",
+    "del": "latest",
+    "eslint": "^8.35.0",
+    "gulp": "latest",
+    "gulp-autoprefixer": "latest",
+    "gulp-cheerio": "^1.0.0",
+    "gulp-clean-css": "latest",
+    "gulp-file-include": "latest",
+    "gulp-if": "latest",
+    "gulp-imagemin": "latest",
+    "gulp-newer": "latest",
+    "gulp-plumber": "latest",
+    "gulp-rename": "latest",
+    "gulp-replace": "latest",
+    "gulp-sass": "latest",
+    "gulp-svg-sprite": "^2.0.1",
+    "gulp-webp": "latest",
+    "gulp-webp-html-nosvg": "latest",
+    "gulp-webpcss": "latest",
+    "gulp-zip": "latest",
+    "prettier": "2.8.4",
+    "sass": "latest",
+    "ts-loader": "^9.4.2",
+    "typescript": "^4.9.5",
+    "webp-converter": "2.2.3",
+    "webpack": "latest",
+    "webpack-cli": "^5.0.1",
+    "webpack-stream": "latest"
+  },
+  "dependencies": {
+    "gulp-fonter": "^0.3.0",
+    "gulp-ttf2woff2": "^4.0.1"
+  }
+}

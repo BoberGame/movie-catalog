@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('partials/head.html', {
+"title":"Home"
+})
+
+<body>
+  @@include('partials/header.html', {})
+  @@include('partials/sidebar.html', {})
+
+  <main class="page">
+    <div class="container">
+      <form class="form-wrapper" action="/">
+        <input class="form-control" type="text" placeholder="Search  for movies by title">
+        <button class="form-btn btn" type="submit">Search</button>
+      </form>
+      <section class="section" aria-label="Popular movies">
+        <h2 class="section__title">Popular movies right now</h2>
+        <div class="cards">
+          @@include('partials/card.html', {})
+          @@include('partials/card.html', {})
+          @@include('partials/card.html', {})
+          @@include('partials/card.html', {})
+          @@include('partials/card.html', {})
+          @@include('partials/card.html', {})
+         
+        </div>
+      </section>
+    </div>
+  </main>
+
+
+  <script src="js/app.min.js"></script>
+
+
+</body>
+
+</html>

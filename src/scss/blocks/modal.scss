@@ -1,0 +1,140 @@
+.modal {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  padding: 120px 15px 15px;
+  padding-right: 15px;
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  opacity: 0;
+
+  pointer-events: none;
+  transition: opacity 0.3s ease 0s;
+  background-color: rgba(0, 0, 0, 0.2);
+  overflow-x: hidden;
+  overflow-y: auto;
+
+  @media (max-width: 768px) {
+    padding: 0;
+    overflow-x: hidden;
+    overflow-y: hidden;
+  }
+
+  &.show {
+    opacity: 1;
+    pointer-events: auto;
+  }
+
+  &__window {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    margin: auto;
+    max-width: 930px;
+    width: 100%;
+    padding: 40px 80px 50px 70px;
+    overflow: auto;
+
+    background-color: var(--clr-white);
+    border-radius: 12px;
+
+    transform: translateY(-400px);
+    transition: transform 0.35s ease 0s;
+
+    .show & {
+      transform: translate3d(0, -100px, 0);
+    }
+
+    @media (max-width: 768px) {
+      height: 100%;
+      overflow: auto;
+
+      .show & {
+        transform: translate3d(0, 0, 0);
+      }
+    }
+
+    @media (max-width: 576px) {
+      padding: 24px 28px 34px;
+    }
+  }
+
+  &__header {
+    margin-bottom: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+
+    @media (max-width: 768px) {
+      margin-bottom: 14px;
+    }
+  }
+
+  &__close {
+    width: 32px;
+    height: 32px;
+    background-color: transparent;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    transition: transform 0.2s;
+
+    @media (any-hover: hover) {
+      &:hover {
+        transform: scale(1.2);
+      }
+    }
+  }
+
+  &__item {
+    max-width: 560px;
+  }
+
+  &__title {
+    margin-bottom: 24px;
+
+    font-size: rem(20);
+
+    line-height: 1.1;
+    color: var(--clr-black);
+    font-weight: 500;
+
+    @media (max-width: 576px) {
+      font-weight: 700;
+    }
+  }
+
+  &__body {
+    width: 100%;
+  }
+
+  &__text {
+    font-size: rem(16);
+
+    @media (max-width: 576px) {
+      font-size: rem(14);
+
+      &_mb {
+        font-weight: 500;
+      }
+    }
+  }
+
+  &__btn {
+    text-transform: none;
+    padding: em(18, 20) 1em;
+
+    @media (max-width: 768px) {
+      width: 100%;
+      margin-top: 12px;
+    }
+  }
+}

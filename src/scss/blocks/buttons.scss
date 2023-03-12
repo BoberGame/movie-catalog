@@ -1,0 +1,13 @@
+.btn {
+  display: inline-block;
+  padding: em(11, 15) em(11, 15);
+  min-width: 247px;
+  font-size: rem(15);
+  font-weight: 700;
+  color: #080808;
+  background-color: var(--clr-primary);
+  text-align: center;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+}
